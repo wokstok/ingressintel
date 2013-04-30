@@ -50,7 +50,7 @@ public class MainActivity extends FragmentActivity implements
 	final HttpTransport transport = AndroidHttp.newCompatibleTransport();
 	final JsonFactory jsonFactory = new GsonFactory();
 	GoogleAccountCredential credential;
-	Fusiontables service;
+	Fusiontables fusionService;
 	int numAsyncTasks;
 	PortalsFragment portalsFragment;
 
@@ -112,7 +112,7 @@ public class MainActivity extends FragmentActivity implements
 					.setTabListener(this));
 		}
 
-		service = getFusionTablesService();
+		fusionService = getFusionTablesService();
 	}
 
 	private Fusiontables getFusionTablesService() {

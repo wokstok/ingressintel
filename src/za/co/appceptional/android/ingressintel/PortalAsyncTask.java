@@ -23,7 +23,7 @@ abstract class PortalAsyncTask extends AsyncTask<Void, Void, Boolean> {
 
 	  PortalAsyncTask(PortalsFragment fragment) {
 	    this.fragment = fragment;
-	    client = ((MainActivity)fragment.getActivity()).service;
+	    client = ((MainActivity)fragment.getActivity()).fusionService;
 	    progressBar = fragment.getView().findViewById(R.id.portalRefresh);
 	    listView = (ListView)fragment.getView().findViewById(R.id.portalList);
 	  }
