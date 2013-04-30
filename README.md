@@ -1,6 +1,7 @@
 ingressintel
 ============
-
+# Android Ingress Intel App
+This app is intended to facilitate mapping Portals into a custom map layer for Ingress players. It does not interact with the Ingress game in any way. The app provides a method of recording notes and later viewing the notes as well as locations within a cutom map overlay.
 
 ## Licence
 
