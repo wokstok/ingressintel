@@ -5,6 +5,8 @@ A fusion table is used to save the information common to a number of players, as
 Please see the [issues](https://github.com/wokstok/ingressintel/issues) section
 to report any bugs or feature requests and to see the list of known issues.
 
+For more information about the project have a look at the [wiki](https://github.com/wokstok/ingressintel/wiki)
+
 ## Licence
 
 * [Apache Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
