@@ -1,0 +1,7 @@
+tmp
+lib
+bin
+*.iws
+*.iml
+.DS_Store
+classes
