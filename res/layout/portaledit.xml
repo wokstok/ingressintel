@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/txtPortalName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/portalname" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/txtPortalLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/portallocation" />
+
+    <Switch
+        android:id="@+id/swPortalTeam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="@string/portalteam"
+        android:textOff="Resistance"
+        android:textOn="Enlightened" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:text="@string/portallevel" />
+
+        <SeekBar
+            android:id="@+id/sbPortalLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:max="7" />
+
+        <TextView
+            android:id="@+id/portallevelvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/buttonPortalSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="@string/portalsave" />
+
+        <Button
+            android:id="@+id/buttonPortalBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="@string/portalback" />
+
+    </LinearLayout>
+
+</LinearLayout>

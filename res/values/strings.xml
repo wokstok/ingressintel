@@ -1,0 +1,22 @@
+<resources>
+
+    <string name="app_name">Ingress Intel</string>
+    <string name="title_section3">Chat</string>
+    <string name="title_section2">Map</string>
+    <string name="title_section1">Portals</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="error">Error</string>
+    <string name="error_format">[Error] %s</string>
+    <string name="accounts">Accounts</string>
+    <string name="refresh">Refresh</string>
+    <string name="addPortal">Add Portal</string>
+    <string name="portalname">Portal Name</string>
+    <string name="portallocation">Portal Location</string>
+    <string name="portalteam">Team</string>
+    <string name="portallevel">Level</string>
+    <string name="portalsave">Save</string>
+    <string name="portalback">Back</string>
+
+</resources>
