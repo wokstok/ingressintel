@@ -5,3 +5,4 @@ bin
 *.iml
 .DS_Store
 classes
+res/values/apikey.xml
