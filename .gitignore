@@ -7,3 +7,4 @@ bin
 .DS_Store
 classes
 project.properties
+res/values/apikey.xml 
