@@ -17,6 +17,7 @@ public class PortalsFragment extends Fragment {
 
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
 		View view = inflater.inflate(R.layout.portalview, container, false);
 		Button btnAddPortal = (Button)view.findViewById(R.id.addPortal);
 		btnAddPortal.setOnClickListener(new OnClickListener ()
