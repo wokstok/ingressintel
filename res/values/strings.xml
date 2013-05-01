@@ -18,5 +18,6 @@
     <string name="portallevel">Level</string>
     <string name="portalsave">Save</string>
     <string name="portalback">Back</string>
+    <string name="map_not_ready">Map is not ready yet</string>
 
 </resources>

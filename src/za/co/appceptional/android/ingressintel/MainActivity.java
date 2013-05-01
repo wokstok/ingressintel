@@ -3,6 +3,11 @@ package za.co.appceptional.android.ingressintel;
 import java.util.zip.Inflater;
 
 import com.google.android.gms.common.GooglePlayServicesUtil;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.UiSettings;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.api.client.extensions.android.http.AndroidHttp;
 import com.google.api.client.googleapis.extensions.android.gms.auth.GoogleAccountCredential;
 import com.google.api.client.http.HttpTransport;
@@ -38,6 +43,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends FragmentActivity implements
 		ActionBar.TabListener {
@@ -53,6 +59,7 @@ public class MainActivity extends FragmentActivity implements
 	Fusiontables fusionService;
 	int numAsyncTasks;
 	PortalsFragment portalsFragment;
+	RetainMapActivity portalsMapFragment;
 
 	/**
 	 * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -68,6 +75,7 @@ public class MainActivity extends FragmentActivity implements
 	 * The {@link ViewPager} that will host the section contents.
 	 */
 	ViewPager mViewPager;
+	public GoogleMap mMap;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -112,6 +120,7 @@ public class MainActivity extends FragmentActivity implements
 					.setTabListener(this));
 		}
 
+		// Start the fusion table service
 		fusionService = getFusionTablesService();
 	}
 
@@ -181,15 +190,19 @@ public class MainActivity extends FragmentActivity implements
 		public Fragment getItem(int i) {
 			Fragment fragment;
 			Bundle args;
-
-			switch (i) {
-			case 0:
+			if (i == 0) {
 				portalsFragment = new PortalsFragment();
 				args = new Bundle();
 				args.putInt(ARG_SECTION_NUMBER, i);
 				portalsFragment.setArguments(args);
 				return portalsFragment;
-			default:
+			} else if (i == 1) {
+				portalsMapFragment = new RetainMapActivity();
+				args = new Bundle();
+				args.putInt(ARG_SECTION_NUMBER, i);
+				portalsFragment.setArguments(args);
+				return portalsMapFragment;
+			} else {
 				fragment = new DummySectionFragment();
 				args = new Bundle();
 				args.putInt(ARG_SECTION_NUMBER, i + 1);
