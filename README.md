@@ -7,6 +7,10 @@ to report any bugs or feature requests and to see the list of known issues.
 
 For more information about the project have a look at the [wiki](https://github.com/wokstok/ingressintel/wiki) section.
 
+## Documentation
+
+* [Getting started](http://github.com/wokstok/ingressintel/wiki/Getting-started)
+
 ## Licence
 
 [Apache Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
@@ -25,7 +29,17 @@ For more information about the project have a look at the [wiki](https://github.
     See the License for the specific language governing permissions and
     limitations under the License.
 
+## Contributing
+
+Please fork this repository and contribute back using [pull requests](http://github.com/wokstok/ingressintel/pulls).
+
+Any contributions, large or small, major features, bug fixes, unit tests are welcomed and appreciated but will be reviewed and discussed.
+
 ## Compiling
 ###Google Play Services 
 
 You will need the Google Play Services SDK (http://developer.android.com/google/play-services/setup.html)
+
+## Author
+
+Warren Hodgkinson | David Vannucci | www.appceptional.co.za
