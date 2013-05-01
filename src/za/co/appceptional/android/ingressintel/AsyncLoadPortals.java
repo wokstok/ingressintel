@@ -23,7 +23,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import za.co.appceptional.android.ingressintel.MainActivity.PortalsFragment;
+import za.co.appceptional.android.ingressintel.PortalsFragment;
 
 /**
  * Asynchronously load the tasks.

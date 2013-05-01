@@ -30,7 +30,7 @@ import java.util.GregorianCalendar;
 import java.util.List;
 import java.util.UUID;
 
-import za.co.appceptional.android.ingressintel.MainActivity.PortalsFragment;
+import za.co.appceptional.android.ingressintel.PortalsFragment;
 
 /**
  * Asynchronously load the tasks.

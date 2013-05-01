@@ -303,43 +303,6 @@ public class MainActivity extends FragmentActivity implements
 				REQUEST_ACCOUNT_PICKER);
 	}
 
-	public static class PortalsFragment extends Fragment {
-		public PortalsFragment() {
-		}
-
-		public View onCreateView(LayoutInflater inflater, ViewGroup container,
-				Bundle savedInstanceState) {
-			View view = inflater.inflate(R.layout.portalview, container, false);
-			Button btnAddPortal = (Button)view.findViewById(R.id.addPortal);
-			btnAddPortal.setOnClickListener(new OnClickListener ()
-			{
-				@Override
-				public void onClick(View v)
-				{
-					android.app.FragmentManager fm = getActivity().getFragmentManager();
-					new EditPortalDialog().show (fm, "New Portal");
-				}
-			});
-			
-			final ListView lstPortals = (ListView)view.findViewById(R.id.portalList);
-			lstPortals.setOnItemLongClickListener(new OnItemLongClickListener() {
-
-				@Override
-				public boolean onItemLongClick(AdapterView<?> arg0, View v,
-						int index, long arg3)
-				{
-					PortalInfo portalInfo = (PortalInfo)lstPortals.getItemAtPosition(index);
-					android.app.FragmentManager fm = getActivity().getFragmentManager();
-					EditPortalDialog dlg = new EditPortalDialog();
-					dlg.setArguments(portalInfo.getBundle());
-					dlg.show(fm, "Edit Portal");
-					return true;
-				}
-			});
-			return view;
-		}
-	}
-
 	/**
 	 * A dummy fragment representing a section of the app, but that simply
 	 * displays dummy text.

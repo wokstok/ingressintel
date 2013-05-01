@@ -3,7 +3,7 @@ package za.co.appceptional.android.ingressintel;
 import java.io.IOException;
 import java.util.List;
 
-import za.co.appceptional.android.ingressintel.MainActivity.PortalsFragment;
+import za.co.appceptional.android.ingressintel.PortalsFragment;
 
 import android.os.AsyncTask;
 import android.view.View;
